@@ -11,4 +11,5 @@ args = parser.parse_args()
 item_id = args.item_id
 item_url = 'http://services.runescape.com/m=itemdb_rs/api/catalogue/detail.json?item={0}'.format(item_id)
 request = requests.get(item_url)
-print(request.text)
+item_price = request.json['item']['current']['price']
+print(item_price)
