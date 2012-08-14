@@ -11,3 +11,11 @@ Planned Features
 * Display price trends for 180 days.
 * Display a picture of the item next to the name.
 * Show the current price and change in price.
+
+-------------
+Running Tests
+-------------
+
+Tests are written using ``unittest`` and may be run as follows::
+
+    python test.py
