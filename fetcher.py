@@ -5,4 +5,4 @@ def fetch_price(item_id):
     response = requests.get(item_url)
     item_inner = response.json['item']
     item_price = item_inner['current']['price']
-    return item_price
+    return str(item_price)
