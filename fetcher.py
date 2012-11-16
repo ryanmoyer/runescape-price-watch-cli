@@ -7,4 +7,3 @@ def fetch_price(item_id):
     item_price = item_inner['current']['price']
     item_name = item_inner['name']
     return (item_name, str(item_price))
-
